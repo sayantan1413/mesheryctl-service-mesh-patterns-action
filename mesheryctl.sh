@@ -42,7 +42,7 @@ main() {
 		mesheryctl mesh deploy --adapter $service_mesh_adapter -t ~/auth.json $service_mesh
 		sleep 30
 		docker ps
-		mesheryctl pattern apply --file $url -t ~/auth.json
+		mesheryctl pattern apply --file $url 
 		sleep 30s
 		kubectl get all --all-namespaces
 }
